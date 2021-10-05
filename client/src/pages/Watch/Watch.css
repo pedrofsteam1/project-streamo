@@ -1,0 +1,192 @@
+
+
+.watch--container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.watch--video {
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    object-fit: cover;   
+    z-index: 9;
+}
+
+.watch--display {
+    display: flex;
+    flex-direction: column;
+    transition: all ease 0.3s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+}
+
+.watch--screen {
+    z-index: 999;
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+}
+
+
+.watch--controls {
+    position: relative;
+    display: none;
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    transition: all ease 0.2s;
+}
+
+.watch--controls--play,
+.watch--controls--back,
+.watch--controls--forward,
+.watch--controls--info,
+.watch--controls--previous,
+.watch--controls--next,
+.watch--controls--list,
+.watch--controls--subtitle,
+.watch--controls--quality {
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.watch--controls--volume {
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+}
+
+.watch--controls--name {
+    display: flex;
+    height: 35px;
+    flex-grow: 1;
+    margin-right: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.watch--controls--volumediv {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.watch--controls--volumecontainer {
+    display: none;
+    flex-direction: row;
+    width: 120px;
+    height: 36px;
+    cursor: pointer;
+    
+}
+
+.watch--controls--volume:hover ~ .watch--controls--volumecontainer {
+    display: flex;
+}
+
+.watch--controls--volumecontainer:hover {
+    display: flex;
+} 
+
+
+.watch--controls--volumeBar {
+    display: flex;
+    width: 100px;
+    height: 5px;
+    background-color:rgba(70, 70, 70, 0.664);
+    margin: auto;
+}
+
+.watch--controls--volumeFlow {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.watch--controls--volumeMoviment {
+    position: relative;
+    display: flex;
+    width: 1px;
+    height: 100%;
+    margin-left: auto;
+}
+
+.watch--controls--volumeCircle {
+    position: absolute;
+    display: flex;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+    margin-top: -4.5px;
+}
+
+
+.watch--controls--full {
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+.video--loading {
+    position: absolute;
+    z-index: 9999999999999999;
+    width: 100%;
+    height: 100%;
+    display: none;
+    top: 0;
+    left: 0;
+    background-color:rgba(10, 10, 10, 0.75);
+}
+
+
+.video--loader--loop {
+    display: flex;
+    margin: auto;
+    border: 5px solid transparent;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border-top: 6px solid orange;
+    -webkit-animation: spin 1s linear infinite; /* Safari */
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+

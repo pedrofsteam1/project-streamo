@@ -1,0 +1,248 @@
+
+.feat {
+    height: 75vh;
+    width: 80vw;
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all ease 0.2s;
+}
+
+
+.feat--background--v {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to top, #111 3%, transparent 50%);
+}
+
+
+.feat--background--h {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to right, #111 10%, transparent 60%), linear-gradient(to left, #111 3%, transparent 60%);
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+    padding-bottom: 150px;
+    padding-top: 50px;
+}
+
+
+.feat--infoDisplay {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+
+.feat--name {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+
+.feat--info {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+
+.feat--points, .feat--year, .feat--seasons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+.feat--add-favorite,
+.feat--like,
+.feat--dislike {
+    height: 25px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 5px;
+    opacity: 1;
+    transition: all ease 0.2s;
+    cursor: pointer;   
+}
+
+.feat--add-favorite {
+    margin-left: 3px;
+}
+
+.feat--like {
+    margin-left: 20px;
+}
+
+.feat--dislike {
+    margin-left: 20px;
+}
+
+
+.feat--year {
+    color: #999;
+}
+
+
+.feat--description {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #999;
+    max-width: 40%;
+}
+
+
+.feat--buttons {
+    margin-top: 30px;
+}
+
+.feat--watch--button {
+    display: inline-block;   
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 10px;
+    opacity: 1;
+    transition: all ease 0.2s;
+    cursor: pointer;
+}
+
+.feat--watch--button:hover {
+    opacity: 0.8;
+}
+
+.feat--watch--button {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 12px 25px;
+    background-color: transparent;
+    border: 2px solid #46d369;
+    color: #46d369;
+}
+
+
+.feat--genres {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #999;
+}
+
+.feat--arrowLeft,
+.feat--arrowRight {
+    position: absolute;
+    width: 80px;
+    height: 75vh;
+    background-color: transparent;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all ease 0.5s;
+    opacity: 0;
+}
+
+.feat:hover .feat--arrowLeft {
+    opacity: 1;
+}
+
+.feat:hover .feat--arrowRight {
+    opacity: 1;
+}
+
+.feat--arrowLeft {
+    left: 5vw;
+}
+
+.feat--arrowRight {
+    right: 5vw;
+}
+
+.feat--listCircle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10px;
+    width: 100%;
+}
+
+.feat--circle {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 15px;
+    background-color: transparent;
+    border: 1px solid #46d369;
+    border-radius: 50%;
+    transition: all ease 0.3s;
+}
+
+
+
+
+@media (max-width:760px) {
+    .feat {
+        height: 90vh;
+        width: 100%;
+    }
+
+    .feat--name {
+        font-size: 35px;
+    }
+
+    .feat--info {
+        font-size: 16px;
+    }
+
+    .feat--description {
+        font-size: 14px;
+        max-width: 100%;
+        margin-right: 20px;
+    }
+
+    .feat--watch--button,
+    .feat--add-favorite {
+        font-size: 16px;
+
+    }
+
+    .feat--genres {
+        font-size: 14px;
+    }
+
+    .feat--infoDisplay {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .feat--arrowRight,
+    .feat--arrowLeft {
+        opacity: 1;
+        width: 40px;
+    }
+
+    .feat--arrowLeft {
+        left: 0;
+    }
+
+    .feat--arrowRight {
+        right: 0;
+    }
+
+    .feat--listCircle {
+        margin-top: -30px;
+    }
+} 
+
+
+
+
+

@@ -1,0 +1,92 @@
+.register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #010101;
+}
+
+.register--container {
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    padding: 20px 20px 20px 20px;
+    background-color: white;
+}
+
+
+.register--input {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 5px;
+}
+
+
+.register--input input {
+    width: 350px;
+    font-size: 18px;
+    font-weight: 0;
+    color: black;
+    outline: none;
+    padding: 5px 5px 5px 5px;
+    margin-top: 2px;
+    border-radius: 5px;
+
+}
+
+
+.register--signup {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register--signup button {
+    width: 350px;
+    height: 40px;
+    background-color: #46d369;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+.register--login {
+    padding-top: 20px;
+    text-align: center;
+    color: black;
+    font-size: 14px;
+}
+
+.register--login strong {
+    text-decoration: underline;
+    color: cornflowerblue;
+    cursor: pointer;
+}
+
+
+@media (max-width: 760px) {
+    .register {
+        width: 100vw;
+        min-height: 100vh;
+        min-height: -webkit-fill-available;
+        background-color: cornflowerblue;
+    }
+
+    .register--input input {
+        width: 250px;
+        font-size: 16px;
+    }
+
+    .register--signup button {
+        width: 250px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
