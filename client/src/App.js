@@ -18,7 +18,7 @@ import Watch from "./pages/Watch/Watch";
 function App({auth}) {
   Authenticate.isAuthenticated = auth;
   return (
-    <BrowserRouter basename="/streamo">
+    <BrowserRouter basename="/project-streamo">
       <Switch>
           <GlobalContext.Provider value={global}>
               <Route path= "/" exact={true} component={Login} />
